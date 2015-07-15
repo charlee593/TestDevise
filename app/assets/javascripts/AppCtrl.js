@@ -24,6 +24,11 @@
 		$rootScope.$on('auth:oauth-registration', function(ev, user) {
 		    alert('new user registered through oauth:' + user.email);
 		});
+
+	    $rootScope.$on('auth:validation-success', function(ev, user) {
+		    alert('User name: ' + user.name);
+		    console.log(user);
+		});
 	}
 
 	angular

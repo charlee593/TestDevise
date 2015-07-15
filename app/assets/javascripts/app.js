@@ -17,12 +17,18 @@
             	url: '/',
             	templateUrl: 'home/_home.html',
             	controller: 'MainCtrl'
-                // resolve: {
-                //   auth: function($auth) {
-                //     return $auth.validateUser();
-                //   }
-                // }
-        	});
+        	})
+            .state('auth', {
+                url: '/auth',
+                templateUrl: 'auth/_auth.html',
+                resolve: {
+                  auth: function($auth) {
+                    return $auth.validateUser();
+                  }
+                }
+            });
+
+        $urlRouterProvider.otherwise('home');
 
     });
 

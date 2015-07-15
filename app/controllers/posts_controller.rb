@@ -2,6 +2,8 @@ class PostsController < ApplicationController
   before_action :set_post, only: [:show, :update, :destroy]
   before_action :authenticate_user!
 
+  respond_to :json
+
   # GET /posts
   # GET /posts.json
   def index
