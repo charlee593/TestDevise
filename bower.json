@@ -1,0 +1,22 @@
+{
+  "name": "flux",
+  "version": "0.0.0",
+  "authors": [
+    "Carlos Lee <carloskb.lee@mail.utoronto.ca>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.2",
+    "angular-ui-router": "~0.2.15",
+    "bootstrap": "~3.3.5",
+    "ng-token-auth": "~0.0.25"
+  }
+}
